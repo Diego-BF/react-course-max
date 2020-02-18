@@ -4,21 +4,21 @@ import UserOutput from './UserOutput/UserOutput'
 import UserInput from './UserInput/UserInput'
 
 function App() {
-  const [username, setUsername] = useState("Anon");
+  const [username, setUsername] = useState('Anon');
 
   const changeNameHandler = (event) => {
     setUsername(event.target.value)
   }
 
   return (
-    <div className="App">
+    <div className='App'>
       <UserInput changeName={changeNameHandler} name={username} />
       <UserOutput
         name={username}
-        greetings={"How are you?"} />
+        greetings={'How are you?'} />
       <UserOutput
         name={username}
-        greetings={"Welcome back!"} />
+        greetings={'Welcome back!'} />
     </div>
   );
 }
