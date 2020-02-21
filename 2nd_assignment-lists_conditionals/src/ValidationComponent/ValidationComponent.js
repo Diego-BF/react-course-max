@@ -4,7 +4,7 @@ const validationComponent = (props) => {
   let validLength = <span>Text too short!</span>;
 
   if (props.textLength >= 5) {
-      validLength = <span>Text too long!</span>;
+    validLength = <span>Text too long!</span>;
   }
 
   return (
